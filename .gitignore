@@ -15,3 +15,6 @@ coverage
 # System Files
 .DS_Store
 Thumbs.db
+
+# Development Paths
+dist
