@@ -1,5 +1,5 @@
 const webackMerge = require('webpack-merge');
-const { NamedModulesPlugin, HotModuleReplacementPlugin } = require('webpack');
+const { NamedModulesPlugin } = require('webpack');
 const commonConfig = require('./webpack.common.config');
 
 module.exports = webackMerge(commonConfig, {
@@ -15,5 +15,5 @@ module.exports = webackMerge(commonConfig, {
 
   watch: true,
 
-  plugins: [new HotModuleReplacementPlugin(), new NamedModulesPlugin()]
+  plugins: [new NamedModulesPlugin()]
 });
